@@ -1,47 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acompanhamento</title>
+    <title>Acomp DaMata</title>
     <style>
-        /* Estilos para tornar o iframe responsivo */
-        .iframe-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; /* Proporção 16:9 */
-            height: 0;
-            overflow: hidden;
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
         }
-
-        .iframe-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
+        iframe {
             width: 100%;
             height: 100%;
+            border: none;
         }
-
-        /* Estilos para o rodapé */
         footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #f1f1f1;
-            position: fixed;
+            position: absolute;
+            bottom: 10px;
             width: 100%;
-            bottom: 0;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
         }
     </style>
 </head>
 <body>
 
-    <div class="iframe-container">
-        <iframe title="Acompanhamento" src="https://app.powerbi.com/view?r=eyJrIjoiMjk3ZmRkODEtYmQ2Mi00ODM0LWJjMGYtOTFlZGQzYmU1ODM3IiwidCI6IjJlMzZkY2ExLTM1ODctNDNiYi05NmUwLTgyN2EyNWEzNGZjMyJ9&embedImagePlaceholder=true&pageName=30397845c32415669b18" frameborder="0" allowFullScreen="true"></iframe>
-    </div>
+    <iframe title="Acompanhamento" src="https://app.powerbi.com/view?r=eyJrIjoiMjk3ZmRkODEtYmQ2Mi00ODM0LWJjMGYtOTFlZGQzYmU1ODM3IiwidCI6IjJlMzZkY2ExLTM1ODctNDNiYi05NmUwLTgyN2EyNWEzNGZjMyJ9&embedImagePlaceholder=true" allowfullscreen="true"></iframe>
 
-    <footer>
-        Feito com ❤️ por Everton Tezzon Ferreira
-    </footer>
+    <footer>Feito com ❤️ por Everton Tezzon Ferreira</footer>
 
 </body>
 </html>
