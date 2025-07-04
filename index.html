@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relatórios Everton</title>
+
+  <!-- Manifesto PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" href="icons/icon-512.png" type="image/png">
+
+  <!-- Estilos -->
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background-color: #000;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .iframe-container {
+      flex: 1;
+    }
+
+    iframe {
+      border: none;
+      width: 100vw;
+      height: 100%;
+    }
+
+    footer {
+      text-align: center;
+      padding: 8px;
+      background-color: #111;
+      font-size: 13px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="iframe-container">
+      <iframe 
+        src="https://app.powerbi.com/view?r=eyJrIjoiMjk3ZmRkODEtYmQ2Mi00ODM0LWJjMGYtOTFlZGQzYmU1ODM3IiwidCI6IjJlMzZkY2ExLTM1ODctNDNiYi05NmUwLTgyN2EyNWEzNGZjMyJ9&embedImagePlaceholder=true&pageName=30397845c32415669b18" 
+        allowfullscreen="true">
+      </iframe>
+    </div>
+    <footer>
+      Feito com ❤️ por Everton Tezzon Ferreira
+    </footer>
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
